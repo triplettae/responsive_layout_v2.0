@@ -1,3 +1,133 @@
+/*****
+GLOBAL
+*****/
+
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+h2 {
+  vertical-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+p {
+  color: #7f7f7f;
+  font-weight: 300;
+}
+
+/**
+NAV
+**/
+
+nav {
+  color: #4a4a4a;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: flex; 
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav .name {
+  display: inline-block;
+  vertical-align: center;
+  font-weight: 800;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+nav li:not(.name) {
+  display: block;
+  width: 100%;
+  margin: 0 0 5px;
+  background-color: #fff;
+}
+
+nav a {
+  color: #000;
+  transition: all .5s;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #999;
+}
+
+nav a span {
+  display: inline-block;
+  width: 100%;
+  font-size: .875rem;
+  font-weight: 800;
+  padding: .875rem;
+}
+
+
+
+/*****
+HEADER
+*****/
+
+header {
+  padding-bottom: 20px;
+}
+
+header img {
+  max-width: 70%;
+  margin: 20px 15%;
+}
+
+
+
+/***
+MAIN
+***/
+
+main {
+  background-color: #fff;
+  padding: 1.5rem 0 1.5rem;
+}
+
+#portfolio h3 {
+  color: #4a4a4a;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#portfolio img {
+  max-width: 100%;
+}
+
+/*****
+FOOTER
+*****/
+
+.hidden-on-mobile {
+  display: none;
+}
+
+
+
 /**********
 BREAKPOINTS
 **********/
