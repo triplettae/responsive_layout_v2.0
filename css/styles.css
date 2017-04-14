@@ -14,7 +14,7 @@ GLOBAL
   
 body {
   max-width: 940px;
-  margin: 0 auto 20px;
+  margin: 0 auto;
   padding: 0;
   text-align: center;
   background-color: #fafafa;
@@ -46,20 +46,12 @@ nav {
 }
 
 nav ul {
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: flex; 
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
-  list-style-type: none;
+  text-align: center;
   padding: 0;
-  margin-top: 0;
+  margin: 0;
 }
 
 nav .name {
-  display: inline-block;
-  vertical-align: center;
   font-weight: 800;
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -67,7 +59,7 @@ nav .name {
 }
 
 nav li {
-  display: block;
+  display: inline-block;
   width: 100%;
   margin: 0 0 5px;
   background-color: #fff;
@@ -141,6 +133,11 @@ section:nth-child(odd) {
   max-width: 100%;
 }
 
+#skills .wrapper {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
 ul.skills {
   padding: 0;
   text-align: center;
@@ -167,6 +164,16 @@ ul.skills.reverse li:nth-child(odd) {
   background: #a6937c;
 }
 
+#contact .wrapper {
+  font-size: 1.15rem;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+#contact p:first-of-type {
+  padding-bottom: 30px;
+}
+
 .contact-info {
   font-weight: 700;
 }
@@ -185,7 +192,12 @@ footer {
   color: #4a4a4a;
   width: 100%;
   text-align: center;
-  padding: 0 15px;
+  padding: 0 15px 15px;
+  background-color: #fff;
+}
+
+footer .wrapper {
+  border-top: 1px solid #eee;
 }
 
 footer .name {
@@ -222,7 +234,7 @@ footer a:hover {
 footer a span {
   font-size: .875rem;
   font-weight: 800;
-  padding: .875rem;
+  padding: .875rem 0 .875rem .875rem;
 }
 
 
@@ -233,7 +245,68 @@ BREAKPOINTS
 
 @media screen and (min-width: 768px) {
 
+  body {
+    margin: 50px auto 0;
+  }
   
+  nav {
+    padding-bottom: 50px;
+  }
+  
+  nav li {
+    width: auto;
+    background-color: inherit;
+  }
+  
+  header {
+    padding: 0 30px 60px;
+  }
+  
+  header p {
+    float: left;
+    text-align: left;
+    width: 58%;
+    font-size: 120%;
+  }
+  
+  .profile-image-background {
+    float: right;
+    width: 40%;
+    margin: 0;
+  }
+  
+  section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .flex {
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex; 
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
+    /* custom */
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  #portfolio .card {
+    width: 48%;
+  }
+  
+  footer {
+    padding: 0 30px 60px;
+  }
+
+  footer li:not(.hidden-on-mobile) {
+    display:none;
+  }
+  
+  .hidden-on-mobile {
+    display: inline-block;
+  }
   
 }
 
