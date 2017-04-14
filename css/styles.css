@@ -13,7 +13,6 @@ GLOBAL
 }
   
 body {
-  max-width: 940px;
   margin: 0 auto;
   padding: 0;
   text-align: center;
@@ -245,9 +244,19 @@ BREAKPOINTS
 
 @media screen and (min-width: 768px) {
 
+  /*****
+  GLOBAL
+  *****/
+  
   body {
     margin: 50px auto 0;
   }
+  
+  
+  
+  /**
+  NAV
+  **/
   
   nav {
     padding-bottom: 50px;
@@ -257,6 +266,12 @@ BREAKPOINTS
     width: auto;
     background-color: inherit;
   }
+  
+  
+  
+  /*****
+  HEADER
+  *****/
   
   header {
     padding: 0 30px 60px;
@@ -274,6 +289,12 @@ BREAKPOINTS
     width: 40%;
     margin: 0;
   }
+  
+  
+  
+  /***
+  MAIN
+  ***/
   
   section {
     padding-left: 30px;
@@ -295,6 +316,12 @@ BREAKPOINTS
   #portfolio .card {
     width: 48%;
   }
+  
+  
+  
+  /*****
+  FOOTER
+  *****/
   
   footer {
     padding: 0 30px 60px;
