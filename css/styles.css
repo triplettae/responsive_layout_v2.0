@@ -5,20 +5,27 @@ GLOBAL
 * { 
   box-sizing: border-box;
 }
+
+.clearfix:after {
+  display: table;
+  content: "";
+  clear: both;
+}
   
 body {
   max-width: 940px;
-  margin: 0 auto;
-  padding: 0 15px;
+  margin: 0 auto 20px;
+  padding: 0;
   text-align: center;
   background-color: #fafafa;
+  font-family: 'Open Sans', sans-serif; 
 }
 
 h2 {
-  vertical-align: center;
   font-size: 1rem;
   line-height: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
+  font-family: 'Changa One', sans-serif;
 }
 
 p {
@@ -35,6 +42,7 @@ nav {
   width: 100%;
   text-align: center;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 nav ul {
@@ -46,6 +54,7 @@ nav ul {
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
+  margin-top: 0;
 }
 
 nav .name {
@@ -57,7 +66,7 @@ nav .name {
   margin-bottom: 1.2rem;
 }
 
-nav li:not(.name) {
+nav li {
   display: block;
   width: 100%;
   margin: 0 0 5px;
@@ -89,12 +98,22 @@ HEADER
 *****/
 
 header {
-  padding-bottom: 20px;
+  padding: 0 15px 20px;
 }
 
-header img {
+.profile-image-background {
   max-width: 70%;
-  margin: 20px 15%;
+  margin: 30px 15%;
+  padding: 15px;
+  background-color: #eee;
+}
+
+.profile-image {
+  max-width: 50%;
+  border-radius: 100%;
+  border: 2px solid #fafafa;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -103,9 +122,13 @@ header img {
 MAIN
 ***/
 
-main {
+section {
+  padding: 2rem 15px 3rem;
+}
+
+/* TODO: No, leave contact the same as body and make skills a different background.*/
+section:nth-child(odd) {
   background-color: #fff;
-  padding: 1.5rem 0 1.5rem;
 }
 
 #portfolio h3 {
@@ -118,12 +141,88 @@ main {
   max-width: 100%;
 }
 
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #a6937c;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #528cd7;
+}
+
+ul.skills.reverse li {
+  background: #528cd7;
+}
+
+ul.skills.reverse li:nth-child(odd) {
+  background: #a6937c;
+}
+
+.contact-info {
+  font-weight: 700;
+}
+
+
+
 /*****
 FOOTER
 *****/
 
 .hidden-on-mobile {
   display: none;
+}
+
+footer {
+  color: #4a4a4a;
+  width: 100%;
+  text-align: center;
+  padding: 0 15px;
+}
+
+footer .name {
+  float: left;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-right: auto;
+  padding: 15px 0 0;
+}
+
+footer ul {
+  float: right;
+  padding: 15px 0 0;
+}
+
+footer li {
+  float: left;
+  list-style: none;
+}
+
+footer a {
+  float: left;
+  font-weight: 700;
+  color: #4a4a4a;
+  transition: all .5s;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #999;
+}
+
+footer a span {
+  font-size: .875rem;
+  font-weight: 800;
+  padding: .875rem;
 }
 
 
