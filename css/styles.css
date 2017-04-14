@@ -126,7 +126,7 @@ section {
   padding: 2rem 15px 3rem;
 }
 
-/* TODO: No, leave contact the same as body and make skills a different background.*/
+/* Alternate white/grey for visual separation of sections */
 section:nth-child(odd) {
   background-color: #fff;
 }
